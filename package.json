@@ -1,12 +1,13 @@
 {
   "name": "cubism-es",
-  "version": "1.2.1",
+  "version": "1.2.3",
   "description": "Cubism.js ES6 module, based on D3 V7 components",
   "main": "dist/cubism-es.js",
   "module": "dist/cubism-es.esm.js",
   "jsnext:main": "dist/cubism-es.esm.js",
   "scripts": {
     "_prebuild": "eslint src test",
+    "prepare": "rollup -c",
     "build": "rollup -c",
     "dev": "rollup -c rollup.config.dev.mjs -w",
     "serve": "rollup -c rollup.config.serve.mjs",
